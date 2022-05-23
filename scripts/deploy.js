@@ -1,10 +1,8 @@
 async function main() {
-    const farhanContract = await ethers.getContractFactory("farhan_erc721")
-  
-    // Start deployment, returning a promise that resolves to a contract object
-    const farhanDeploy = await farhanContract.deploy()
-    await farhanDeploy.deployed()
-    console.log("Contract deployed to address:", farhanDeploy.address)
+    const contract = await ethers.getContractFactory("CRT_ERC20")
+    const deploy = await contract.deploy()
+    await deploy.deployed()
+    console.log("Contract deployed to address:", deploy.address)
   }
   
   main()

@@ -2,7 +2,7 @@ require("@nomiclabs/hardhat-ethers");
 require("dotenv").config();
 
 module.exports = {
-  solidity: "0.8.0",
+  solidity: "0.8.14",
   networks: {
     rinkeby: {
       url: process.env.STAGING_ALCHEMY_KEY,
